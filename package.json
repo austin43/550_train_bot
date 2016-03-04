@@ -4,10 +4,10 @@
   "description": "550 Seagaze train bot",
   "main": "/lib/trainbot.js",
   "bin": {
-    "550_train_bot": "bin/bot.js"
+    "550_train_bot": "/bin/trainbot.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bin/bot.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/austin43/550_train_bot/issues"
   },
-  "homepage": "https://github.com/austin43/550_train_bot#readme"
+
+  "dependencies": {
+    "async": "^1.4.1",
+    "progress": "^1.1.8",
+    "request": "^2.60.0",
+    "slackbots": "^0.3.0",
+    "sqlite3": "^3.0.10"
+  },
+  "devDependencies": {
+    "xo": "^0.5.2"
+  }
 }
