@@ -8,7 +8,7 @@
  * @author Luciano Mammino <lucianomammino@gmail.com>
  */
 
-var NorrisBot = require('../lib/norrisbot');
+var NorrisBot = require('../lib/trainbot');
 
 /**
  * Environment variables used to configure the bot:
