@@ -1,27 +1,35 @@
 {
-  "name": "550_train_bot",
+  "name": "trainbot",
   "version": "1.0.0",
-  "description": "550 Seagaze train bot",
-  "main": "/lib/trainbot.js",
-  "bin": {
-    "550_train_bot": "/bin/trainbot.js"
-  },
-  "scripts": {
-    "start": "node bin/bot.js"
-  },
+  "description": "",
+  "keywords": [
+    "Slack",
+    "bot",
+    "jokes"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://austin43@github.com/austin43/550_train_bot.git"
+    "url": "https://github.com/austin43/trainbot"
   },
-  "keywords": [
-    "trainbot"
-  ],
-  "author": "Austin, Caleb, Jaron, Sergey, Victor",
-  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/austin43/550_train_bot/issues"
+    "url": "https://github.com/austin43/trainbot/issues"
   },
-
+  "main": "lib/trainbot.js",
+  "bin": {
+    "austin43": "bin/bot.js"
+  },
+  "scripts": {
+    "start": "node bin/bot.js",
+    "test": "node_modules/.bin/xo bin/bot.js lib/trainbot.js"
+  },
+  "author": {
+    "name": "People",
+    "email": "test@test.com"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "dependencies": {
     "async": "^1.4.1",
     "progress": "^1.1.8",
@@ -31,5 +39,16 @@
   },
   "devDependencies": {
     "xo": "^0.5.2"
+  },
+  "xo": {
+    "space": 4,
+    "rules": {
+      "camelcase": [
+        2,
+        {
+          "properties": "never"
+        }
+      ]
+    }
   }
 }
