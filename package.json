@@ -4,7 +4,7 @@
   "description": "550 Seagaze train bot",
   "main": "/lib/trainbot.js",
   "bin": {
-    "550_train_bot": "bot.js"
+    "550_train_bot": "bin/bot.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
